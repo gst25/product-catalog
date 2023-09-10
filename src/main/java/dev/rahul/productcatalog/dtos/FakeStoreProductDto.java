@@ -1,13 +1,15 @@
-package dev.rahul.productcatalog.models;
+package dev.rahul.productcatalog.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
-@Setter
+
 @Getter
-public class Product extends BaseModel{
+@Setter
+public class FakeStoreProductDto {
+    private Long id;
     private String title;
     private String description;
     private String image;
-    private Category category;
+    private String category;
     private double price;
 }
